@@ -1,0 +1,276 @@
+/* General Body and Font */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background Image Container */
+.bg-image {
+    background-image: url("../image/Layer_1.png"), url("../image/background.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, top center;
+    /* position both */
+    background-size: auto, cover;
+    /* first image keeps its natural size, second covers */
+    min-height: 100vh;
+    position: relative;
+    /* padding-top: 300px; */
+    /* push content below Layer_1.png */
+}
+.header .main-nav{
+    background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 1) 25%, 
+    rgba(255, 255, 255, 1) 75%, 
+    rgba(255, 255, 255, 0.3) 100%
+  );
+}
+
+.hero-section {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    line-height: 1;
+}
+
+.hero-content .text-side h4 {
+    color: #1E3E0F;
+    font-weight: 700;
+    font-size: 35px;
+    margin-left: 29%;
+}
+
+.hero-content .text-side h1 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 100px;
+}
+
+.hero-content .text-side h1 span {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 100px;
+    margin-left: 20%;
+}
+
+.hero-content .text-side h3 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 35px;
+    margin-left: 21%;
+}
+
+.hero-content .text-side img {
+    font-size: 35px;
+    margin-left: 33%;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 15px;
+}
+
+.hero-content .text-side .tagline {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 25%;
+}
+/* Navbar */
+.nav-links li a.active {
+    position: relative;
+    background: linear-gradient(135deg, #4FA428, #1E3E0F);
+    color: #fff;
+    border-radius: 0 10px 0 10px;
+    padding: 30px 20px; /* កាត់ពី 30px → 20px ដើម្បីមិនលីកលើ header */
+    display: inline-block;
+}
+
+/* Partner logo Section */
+.partner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partner_logo img{
+    width: 150px;
+    height: 150px;
+    margin: 90px;
+}
+.partner .product h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+.logo img{
+    margin-left: 40px;
+}
+/* Strategic Partners  */
+.strategic-partner{
+    align-items: center;
+    justify-content: center;
+}
+.strategic img{
+    width: 225px;
+    height: 225px;
+    align-items: center;
+    margin: auto;
+}
+/* Innovation */
+.innovation {
+    background-image: url('../image/back_innovation.png'), url('../image/innovation.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: cover; /* overlay keeps size, team photo covers */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    
+}
+
+.innovation::before {
+    /* dark overlay for readability */
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    /* background: rgba(0, 0, 0, 0.4); */
+    z-index: 1;
+}
+
+.innovation-text {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.6;
+}
+
+.innovation-text img {
+    display: block;
+    margin: auto;
+    width: 40px;
+}
+/* ===== Footer Styles ===== */
+.srun-chhlhat-footer {
+    background: linear-gradient(to bottom, #4FA428 0%, #1E3E0F 100%);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    height: 414px;
+}
+
+/* main footer content */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* column titles + text */
+.footer-col h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer-col .h2{
+    font-size: 12px;
+    font-weight: bold;
+} 
+.footer-col p,
+.footer-col a {
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.6;
+    text-decoration: none;
+}
+#company{
+    /* padding: 40px; */
+}
+.footer-col a:hover {
+    text-decoration: underline;
+}
+.footer-col-links{
+    margin-left: 80px;
+}
+
+/* logo */
+.footer-logo {
+    max-width: 150px;
+}
+
+/* social icons */
+.social-links img {
+    max-width: 180px;
+}
+
+/* map */
+.map-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* copyright inside footer-content */
+.copyright {
+    grid-column: 1 / -1;   /* full width */
+    text-align: center;
+    margin-top: 58px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* bottom pattern */
+.bt-footer {
+    position: relative;
+    z-index: 1;
+    height: 151px;
+    margin-top: -30px;
+}
+.bt-footer img {
+    width: 100%;
+    display: block;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .hero-content {
+        right: 3%;
+        left: unset;
+    }
+
+    .welcome-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .welcome-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        right: 2%;
+    }
+
+    .welcome-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome-text h3 {
+        font-size: 1rem;
+        letter-spacing: 0.2em;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+    }
+}
