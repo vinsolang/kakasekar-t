@@ -50,7 +50,7 @@
                     </div>
 
                     <!-- Old Images Preview -->
-                    <div class="mb-5">
+                    {{-- <div class="mb-5">
                         <label class="block mb-2 text-sm font-medium text-[#0F4634]">Old Images</label>
                         <div id="old-preview" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                             @foreach ($oldImages as $img)
@@ -64,7 +64,22 @@
                                 </div>
                             @endforeach
                         </div>
-                    </div>
+                    </div> --}}
+                    @if(is_array($oldImages) && count($oldImages))
+                        @foreach ($oldImages as $img)
+                            <div class="relative w-full h-[200px]">
+                                <img src="{{ asset($img) }}" class="w-full h-full object-cover rounded-lg shadow-md">
+                                <button type="button"
+                                    class="remove-old absolute top-1 right-1 bg-white text-red-600 rounded-full w-6 h-6 flex items-center justify-center text-lg font-bold shadow hover:bg-red-100"
+                                    data-path="{{ $img }}">×</button>
+
+                                <input type="hidden" name="keep_old_images[]" value="{{ $img }}">
+                            </div>
+                        @endforeach
+                    @else
+                        <p class="text-sm text-gray-500">No old images</p>
+                    @endif
+
 
                     <!-- New Images Preview -->
                     <div class="mb-5">

@@ -125,13 +125,13 @@
 
                     <!-- Navbar (Desktop) -->
                     <nav class="hidden lg:flex text-[#1E3E0F] font-medium items-center">
-                        <ul class="flex lg:flex-wrap justify-center gap-4 space-x-4 lg:gap-2 xl:gap-6 text-[15px] lg:text-[16px] items-center">
+                        <ul class="flex lg:flex-wrap justify-center gap-4 space-x-4 lg:gap-2 xl:gap-4 text-[15px] lg:text-[16px] items-center">
                             <li>
                                 <a href="{{ route('home') }}" class="hover:text-[#4FA428] ">@lang('messages.home')</a>
                             </li>
                             <li><a href="{{ route('about') }}" class="hover:text-[#4FA428]">@lang('messages.about_Us')
                                 </a></li>
-                            <li class="mt-[-10px]"><a href="{{ route('product') }}" class="px-4 lg:w-[135px] lg:h-[98px] flex items-center justify-center 
+                            <li class="mt-[-10px]"><a href="{{ route('product') }}" class="lg:w-[125px] lg:h-[98px] flex items-center justify-center 
                         rounded-bl-[12px] rounded-tr-[12px] 
                         bg-gradient-to-b from-[#4FA428] to-[#1E3E0F] 
                         text-white font-medium">@lang('messages.our_products')</a></li>

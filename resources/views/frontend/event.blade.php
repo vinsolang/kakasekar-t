@@ -671,7 +671,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     <!-- Description -->
                     <div class="text-desc mt-3 px-2 sm:px-4 md:px-6">
                         <p class="text-[16px] sm:text-[18px] md:text-[20px] text-[#000000] leading-relaxed md:leading-loose">
-                            <span class="text-[#1E3E0F] font-bold">Initiative: </span>{{ app()->getLocale() === 'km' ? $news->description_km : $news->description }}
+                            <span class="text-[#1E3E0F] font-bold">Initiative: </span>
+                            ${description}
                         </p>
                     </div>
 

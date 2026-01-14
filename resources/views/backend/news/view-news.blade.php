@@ -61,6 +61,7 @@
                                         N/A
                                     @endif
                                 </td>
+                                
                                 <td>
                                     <span class="short-text">
                                         {!! nl2br(e(\Illuminate\Support\Str::limit($news->description, 20))) !!}
@@ -70,7 +71,7 @@
                                     </span>
                                     <a href="javascript:void(0);" class="toggle-text text-primary">Read more</a>
                                 </td>
-                                <td>{{ $news->created_at->format('d-m-Y') }}</td>
+                                <td>{{ $news->created_at }}</td>
                                 <td>
                                     <div class="dropdown position-static">
                                         <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
