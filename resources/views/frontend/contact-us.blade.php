@@ -32,8 +32,8 @@
         <!-- Header Wrapper -->
         <header class="absolute top-0 left-0 w-full z-[50]">
             <!-- Top Info Bar -->
-            <div class="lg:flex hidden flex-col-3 lg:flex-row justify-end lg:space-x-6 items-center px-4 lg:px-8 h-auto lg:h-[54px] 
-        text-[#1E3E0F] text-xs sm:text-sm lg:mt-2 xl:mt-6 lg:mr-[150px] space-y-2 lg:space-y-0 gap-2">
+            <div class="lg:flex hidden flex-col-3 lg:flex-row justify-end xl:space-x-6 lg:space-x-4 items-center h-auto lg:h-[54px] 
+        text-[#1E3E0F] text-xs sm:text-sm lg:mt-2 xl:mt-6 lg:mr-[150px] space-y-2 lg:space-y-0">
                 {{-- Hiden --}}
                 <div class="flex items-center space-x-2 hidden">
                     <img src="{{ asset('image/time.png') }}" alt="" class="w-4 h-4">
@@ -112,13 +112,13 @@
                     <!-- Logo -->
                     <div class="flex items-center">
                         <img src="{{ asset('image/logo.png') }}" alt="Logo"
-                            class="w-[56px] h-[56px] lg:w-[76px] lg:h-[76px]">
+                            class="w-[56px] h-[56px] lg:w-[65px] lg:h-[65px] relative xl:-left-0 lg:-left-6">
                     </div>
 
                     <!-- Navbar (Desktop) -->
                     <nav class="hidden lg:flex text-[#1E3E0F] font-medium items-center overflow-visible">
                         <ul
-                            class="flex flex-wrap justify-center gap-4 space-x-4 lg:gap-4 xl:gap-6 text-[15px] lg:text-[16px] items-center">
+                            class="flex lg:flex-wrap justify-center gap-4 space-x-4 lg:gap-2 xl:gap-4 text-[15px] lg:text-[16px] items-center">
                             <li>
                                 <a href="{{ route('home') }}" class="hover:text-[#4FA428] ">@lang('messages.home')</a>
                             </li>

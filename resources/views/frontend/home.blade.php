@@ -40,8 +40,8 @@
         <!-- Header Wrapper -->
         <header class="absolute top-0 left-0 w-full z-50">
             <!-- Top Info Bar -->
-            <div class="lg:flex hidden flex-col-3 lg:flex-row justify-end lg:space-x-6 items-center px-4 lg:px-8 h-auto lg:h-[54px] 
-        text-[#1E3E0F] text-xs sm:text-sm lg:mt-2 lg:mr-[150px] space-y-2 lg:space-y-0 gap-2">
+            <div class="lg:flex hidden flex-col-3 lg:flex-row justify-end lg:space-x-4 items-center h-auto lg:h-[54px] 
+        text-[#1E3E0F] text-xs sm:text-sm lg:mt-2 lg:mr-[150px] space-y-2 lg:space-y-0">
                 {{-- Hiden --}}
                 <div class="flex items-center space-x-2 hidden">
                     <img src="{{ asset('image/time.png') }}" alt="" class="w-4 h-4">
@@ -119,13 +119,13 @@
                     <!-- Logo -->
                     <div class="flex items-center">
                         <img src="{{ asset('image/logo.png') }}" alt="Logo"
-                            class="w-[56px] h-[56px] lg:w-[76px] lg:h-[76px]">
+                            class="w-[56px] h-[56px] lg:w-[65px] lg:h-[65px] relative xl:-left-10 lg:-left-4">
                     </div>
 
                     <!-- Navbar (Desktop) -->
                     <nav class="hidden lg:flex text-[#1E3E0F] font-medium items-center">
                         <ul
-                            class="flex flex-wrap justify-center gap-4 space-x-4 lg:gap-4 xl:gap-6 text-[15px] lg:text-[16px] items-center">
+                            class="flex lg:flex-wrap justify-center gap-4 space-x-4 lg:gap-2 xl:gap-6 text-[15px] lg:text-[16px] items-center">
                             <li class="mt-[-10px]">
                                 <a href="{{ route('home') }}" class="px-4 lg:w-[106px] lg:h-[98px] flex items-center justify-center 
                         rounded-bl-[12px] rounded-tr-[12px] 
@@ -211,7 +211,7 @@
             <!-- Mobile Dropdown Menu -->
             <nav id="mobileMenu" class="fixed top-0 right-0 w-72 h-full text-[#1E3E0F] text-base font-medium shadow-lg 
     transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden z-50 flex flex-col 
-    shadow-md bg-white overflow-y-auto mt-[70px]">
+     bg-white overflow-y-auto mt-[70px]">
 
                 <!-- Menu Links -->
                 <div class="flex flex-col px-6 space-y-2">
@@ -280,7 +280,7 @@
 
         <!-- Hero Section -->
         <div class="relative w-full h-[600px] md:h-[800px] lg:h-[1000px] flex justify-center lg:justify-end items-center 
-    bg-cover bg-center text-white px-4 lg:px-12" style="background-image: url('{{ asset('image/background.jpg') }}');">
+    bg-cover bg-center text-white px-4 lg:px-12" style="background-image: url('{{ asset('image/bg-home-page.jpg') }}');">
 
             <!-- Text Block -->
             <div class="text-center lg:mr-[120px]">
