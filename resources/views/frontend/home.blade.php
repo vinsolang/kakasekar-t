@@ -327,7 +327,7 @@
         </div>
 
         <!-- Description -->
-        <section class="py-8 md:py-12 px-4 text-center bg-transparent shadow-none w-[50%] mx-auto" id="text-desc">
+        <section class="py-8 md:py-12 px-4 text-center bg-transparent shadow-none w-[90%] lg:w-[50%] mx-auto" id="text-desc">
             <!-- Title -->
             <h1 class="text-[#1E3E0F] font-bold text-[22px] sm:text-[28px] md:text-[32px] lg:text-[35px] leading-tight">
                 @lang('messages.srun_chhlat') @lang('messages.cambo')

@@ -38,11 +38,22 @@ Route::get('locale/{locale}', [LocalLangController::class, 'setLocale'])->name('
 
 Route::get('/contact', [ClientController::class,'contact'])->name('contact');
 // Give user can download pdf or get pdf
+// Route::get('/download-pdf', function () {
+//     $file = storage_path('app/public/slider-2.pdf');
+//     return response()->download($file, 'kaksekor.pdf');
+// })->name('download.pdf');
+
 Route::get('/download-pdf', function () {
-    $file = storage_path('app/public/slider-2.pdf');
-    return response()->download($file, 'kaksekor.pdf');
+    $path = storage_path('app/public/slider-2.pdf');
+
+    if (!file_exists($path)) {
+        abort(404, 'PDF file not found');
+    }
+
+    return response()->download($path, 'kaksekor.pdf');
 })->name('download.pdf');
-  Route::get('/product/{id}/pricing-rules', [ProductController::class, 'getPricingRules']);
+
+Route::get('/product/{id}/pricing-rules', [ProductController::class, 'getPricingRules']);
 
 /*================================================================================
                                 @@ Route Backend
