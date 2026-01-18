@@ -304,7 +304,7 @@
         <!-- Description -->
         <section class="py-12 px-4 text-center bg-transparent shadow-none">
             <p
-                class="text-[#1E3E0F] text-[15px] line-clamp-5 text-left flex justify-center w-[90%] lg:w-[50%] mx-auto line-clamp-2-fallback">
+                class="text-[#1E3E0F] text-[15px] line-clamp-5 text-left flex justify-center w-[90%] lg:w-[60%] mx-auto line-clamp-2-fallback">
                 @lang('messages.title_pro2')
 
             </p>
